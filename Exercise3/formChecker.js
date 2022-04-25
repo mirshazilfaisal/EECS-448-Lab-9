@@ -1,5 +1,5 @@
-function submit(){
-    document.getElementById('form')
+document.getElementById('form').onsubmit = function(){
+
     let username=document.getElementById('username');
     let password=document.getElementById('password');
 
@@ -23,7 +23,7 @@ function submit(){
     }  
     
     if(!ship1.checked && !ship2.checked && !ship3.checked){
-        alert("Please select only one shipping option");
+        alert("Please select one shipping option");
         return(false);
     }    
 
@@ -45,7 +45,7 @@ function reset(){
     document.getElementById("spe").value="";
     document.getElementById("jc").value="";
     document.getElementById("tv").value="";
-   document.getElementById('7day').checked=false;
-   document.getElementById('overnight').checked=false;
-   document.getElementById('3day').checked=false;
+    document.getElementById('7day').checked=false;
+    document.getElementById('overnight').checked=false;
+    document.getElementById('3day').checked=false;
 }

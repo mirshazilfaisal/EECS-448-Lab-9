@@ -31,9 +31,9 @@ ini_set("display_errors", 1);
 
     $grandtotal = $dc + $spetotal + $jctotal + $tvtotal;
 
-    echo "Receipt: "
-    echo "------------------------------"
-    echo "<br>"
+    echo "Receipt: ";
+    echo "------------------------------";
+    echo "<br>";
 
     echo "
  <table>
