@@ -1,5 +1,6 @@
-document.getElementById('form').onsubmit = function(){
+function submit(){
 
+    document.getElementById('form');
     let username=document.getElementById('username');
     let password=document.getElementById('password');
 
