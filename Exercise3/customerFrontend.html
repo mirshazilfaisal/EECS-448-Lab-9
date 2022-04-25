@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading">Fragrance World</h1>
+    <h2 id="subheading">Clicks away from smelling good</h2>
+    <form action="customerBackend.php" method="post" id="form">
+        <div class="fragrance">
+            <div class="frags">
+                <img src="spe.jpg" style="height:300px" id="imgs"> <br>
+                <label> Viktor & Rolf Spicebomb Extreme 90ml ($125)</label> <br>
+                <input type="number" name="spe" id="spe">
+            </div>
+
+            <div class="frags">
+                <img src="jc.jpg" style="height:300px" id="imgs"> <br>
+                <label> Maison Margiela 'REPLICA' Jazz Club 100ml ($160)</label> <br>
+                <input type="number" name="jc" id="jc">
+            </div>
+
+            <div class="frags">
+                <img src="tv.jpg" style="height:300px" id="imgs"> <br>
+                <label> Tom Ford Tobacco Vanille 100ml ($365)</label> <br>
+                <input type="number" name="tv" id="tv"><br><br>
+            </div>
+
+
+        </div>
+
+        <div class="delivery">
+            <h3>Delivery Options: </h3>
+            <input type="radio" name="choice" id="7day" value="Normal"> 7 Day Shipping (Free)
+            <input type="radio" name="choice" id="3day" value="Priority"> 3 Day Shipping ($5.00)
+            <input type="radio" name="choice" id="overnight" value="Express"> Overnight ($50.00)
+        </div>
+
+        <div class="input">
+            <h3>User Login</h3>
+            <label>Username: </label>
+            <input type="email" name="username" id="username" placeholder="abc@xyz.com"><br>
+
+            <br>
+            <label>Password: </label>
+            <input type="password" name="password" id="password" placeholder="enter here"><br>
+
+            <br>
+
+        </div>
+        <button value="submit" id="submit" onclick="submit()">Submit</button>
+        <button value="reset" id="reset" onclick="reset()">Reset</button>
+    </form>
+    <script src="formChecker.js"></script>
+</body>
+
+</html>
