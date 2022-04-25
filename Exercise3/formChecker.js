@@ -1,6 +1,5 @@
-function submit(){
+document.getElementById('form').onsubmit = function(){
 
-    document.getElementById('form');
     let username=document.getElementById('username');
     let password=document.getElementById('password');
 
@@ -28,13 +27,13 @@ function submit(){
         return(false);
     }    
 
-    if(username.value=="")
+    if(username.value =="")
     {
         alert("Please enter username");
         return(false);
     }
 
-    if(password.value==""){
+    if(password.value ==""){
         alert("Please enter password");
         return(false);
     }
