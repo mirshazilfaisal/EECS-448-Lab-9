@@ -8,28 +8,28 @@ ini_set("display_errors", 1);
     $spe= $_POST["spe"];
     $jc = $_POST["jc"];
     $tv = $_POST["tv"];
-    $shipping = $_POST["choice"];
-    $dc = 0;
+    $ship = $_POST["choice"];
+    $delivery = 0;
 
     $spetotal = $spe*125;
     $jctotal = $jc*160;
     $tvtotal = $tv*365;
 
 
-    if($shipping = "Normal")
+    if($ship = "Normal")
     {
-        $dc = 0;
+        $delivery = 0;
     }
-    else if($shipping = "Priority")
+    else if($ship = "Priority")
     {
-        $dc = 5;
+        $delivery = 5;
     }
-    else if($shipping = "Express")
+    else if($ship = "Express")
     {
-        $dc = 50;
+        $delivery = 50;
     }
 
-    $grandtotal = $dc + $spetotal + $jctotal + $tvtotal;
+    $grandtotal = $delivery + $spetotal + $jctotal + $tvtotal;
 
     echo "---------------------------------------------------------------------------------------------------------------------------";
     echo "<br>";
@@ -67,8 +67,8 @@ ini_set("display_errors", 1);
     echo "<tr>
 		
 		<th >Shipping</th>
-		<td colspan='2'>$shipping</td>
-		<td>$$dc</td>
+		<td colspan='2'>$ship</td>
+		<td>$$delivery</td>
     </tr>";
 
     echo "<tr>
