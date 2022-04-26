@@ -16,15 +16,15 @@ ini_set("display_errors", 1);
     $tvtotal = $tv*365;
 
 
-    if($ship = "Normal")
+    if($ship == "Normal")
     {
         $delivery = 0;
     }
-    else if($ship = "Priority")
+    else if($ship == "Priority")
     {
         $delivery = 5;
     }
-    else if($ship = "Express")
+    else if($ship == "Express")
     {
         $delivery = 50;
     }
